@@ -11,15 +11,20 @@ export default function portfolio() {
         <div className="flex flex-wrap items-center">
           <div className="w-full">
             <h1 className="text-4xl font-semibold mb-5">Portfolio</h1>
-            <p className="text-2xl mb-8 leading-9">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, earum.</p>
+            <p className="text-2xl mb-8 leading-9">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eveniet unde odio ducimus incidunt ipsum laudantium necessitatibus quibusdam sunt beatae?</p>
 
-            <div className='flex -mx-2'>
-              <div className='w-1/2  px-2 text-center'>
+            <div className='flex flex-wrap -mx-2'>
+              <div className='w-full lg:w-1/2 px-2 text-center py-3'>
                 <Image src="/img/portfolio/coffe.jpg" height={230} width={450} layout="responsive" className='max-w-full rounded-lg' />
                 <h4 className='text-2xl my-2 capitalize'>Lorem ipsum dolor sit amet consectetur.</h4>
                 <div className='text-slate-500'>Lorem ipsum dolor sit.</div>
               </div>
-              <div className='w-1/2  px-2 text-center'>
+              <div className='w-full lg:w-1/2 px-2 text-center py-3'>
+                <Image src="/img/portfolio/programming.jpg" height={230} width={450} layout="responsive" className='max-w-full rounded-lg' />
+                <h4 className='text-2xl my-2 capitalize'>Lorem ipsum dolor sit amet consectetur.</h4>
+                <div className='text-slate-500'>Lorem ipsum dolor sit.</div>
+              </div>
+              <div className='w-full lg:w-1/2 px-2 text-center py-3'>
                 <Image src="/img/portfolio/programming.jpg" height={230} width={450} layout="responsive" className='max-w-full rounded-lg' />
                 <h4 className='text-2xl my-2 capitalize'>Lorem ipsum dolor sit amet consectetur.</h4>
                 <div className='text-slate-500'>Lorem ipsum dolor sit.</div>

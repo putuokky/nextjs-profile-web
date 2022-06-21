@@ -12,12 +12,24 @@ export default function Home() {
       <div className="container">
         <div className="flex flex-wrap items-center">
           <div className="w-full lg:w-1/2">
-            <h1 className="text-4xl font-semibold mb-5">Hallo, Saya <span className="text-primary">Monkey D. Lutfi</span></h1>
+            <h1 className="text-4xl font-semibold mb-5">Hallo, Saya <span className="text-primary font-bold">Monkey D. Lutfi</span></h1>
             <p className="text-2xl mb-8 leading-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam suscipit repellendus vero. Unde, iusto officia repellat, maiores quod culpa voluptatem, minima facilis consequuntur odio recusandae pariatur ea? Ducimus, recusandae.</p>
-
-            <Button className="py-3 px-6 rounded-lg bg-primary text-white hover:bg-opacity-80 transition duration-300">
-              <Link href="/contact"><a>Kontak Saya</a></Link>
-            </Button>
+            <div className="flex flex-wrap">
+              <Button className="py-3 px-6 rounded-lg bg-primary text-white hover:bg-opacity-80 transition duration-300">
+                <Link href="mailto:nama-email-kamu@domain-email.com"><a className="font-semibold">Hire me!</a></Link>
+              </Button>
+              <div className="flex items-center ml-5">
+                <div className="w-5 mr-3 justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
+                </div>
+                <div className="w-4 mr-3 justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
+                </div>
+                <div className="w-4 mr-3 justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="w-full lg:w-1/2">
             <svg className="ml-auto mx-auto" width="426" height="543" viewBox="0 0 426 543" fill="none" xmlns="http://www.w3.org/2000/svg">
