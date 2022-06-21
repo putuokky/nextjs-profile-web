@@ -20,7 +20,7 @@ export default function portfolio() {
                 <div className='text-slate-500'>Lorem ipsum dolor sit.</div>
               </div>
               <div className='w-1/2  px-2 text-center'>
-                <Image src="/img/portfolio/coffe.jpg" height={230} width={450} layout="responsive" className='max-w-full rounded-lg' />
+                <Image src="/img/portfolio/programming.jpg" height={230} width={450} layout="responsive" className='max-w-full rounded-lg' />
                 <h4 className='text-2xl my-2 capitalize'>Lorem ipsum dolor sit amet consectetur.</h4>
                 <div className='text-slate-500'>Lorem ipsum dolor sit.</div>
               </div>
