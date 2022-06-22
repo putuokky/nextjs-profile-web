@@ -14,7 +14,6 @@ function Navbar({ router }) {
 
   const navs = [
     { text: 'Home', href: '/' },
-    { text: 'About', href: '/about' },
     { text: 'Portfolio', href: '/portfolio' },
     // { text: '', href: '/' },
   ];
@@ -41,17 +40,6 @@ function Navbar({ router }) {
   }
 
   return (
-    // <nav className="mt-8">
-    //   <div className="container mx-auto flex">
-    //     <Link href="/"><a className="text-3xl uppercase font-semibold">Lutfi.</a></Link>
-    // <ul className="ml-auto flex">
-    //   {navs.map(nav => (
-    //     <li key={nav.text}><Link href={nav.href}><a className={`inline-block mx-5 mt-2 relative transition-opacity ${router.pathname == nav.href ? 'font-bold after:absolute after:-bottom-2 after:left-0 after:w-7 after:h-1 after:bg-black' : ''}`}>{nav.text}</a></Link></li>
-    //   ))}
-    // </ul>
-    //   </div>
-    // </nav>
-
     <header className='mt-8'>
       <div className='container'>
         <div className='flex items-center justify-between relative'>

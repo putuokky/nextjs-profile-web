@@ -1,10 +1,11 @@
 import Button from "@/components/Button";
+import Social from "@/components/Social";
 import Head from "next/head";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <section className="pt-2 my-20">
+    <section className="pt-2 my-16">
       <Head>
         <title>Home</title>
       </Head>
@@ -15,20 +16,13 @@ export default function Home() {
             <h1 className="text-4xl font-semibold mb-5">Hallo, Saya <span className="text-primary font-bold">Monkey D. Lutfi</span></h1>
             <p className="text-2xl mb-8 leading-9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae aliquam suscipit repellendus vero. Unde, iusto officia repellat, maiores quod culpa voluptatem, minima facilis consequuntur odio recusandae pariatur ea? Ducimus, recusandae.</p>
             <div className="flex flex-wrap">
-              <Button className="py-3 px-6 rounded-lg bg-primary text-white hover:bg-opacity-80 transition duration-300">
+              <Button className="w-full md:w-1/4 mb-3 md:mb-0 py-3 px-6 rounded-lg bg-primary text-white hover:bg-opacity-80 transition duration-300">
                 <Link href="mailto:nama-email-kamu@domain-email.com"><a className="font-semibold">Hire me!</a></Link>
               </Button>
-              <div className="flex items-center ml-5">
-                <div className="w-5 mr-3 justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
-                </div>
-                <div className="w-4 mr-3 justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
-                </div>
-                <div className="w-4 mr-3 justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" /></svg>
-                </div>
-              </div>
+              <Button className="w-full md:w-1/4 mb-3 md:mb-0 py-3 px-6 md:mx-3 rounded-lg bg-primary text-white hover:bg-opacity-80 transition duration-300">
+                <Link href="#"><a className="font-semibold">Download CV</a></Link>
+              </Button>
+              <Social />
             </div>
           </div>
           <div className="w-full lg:w-1/2">
