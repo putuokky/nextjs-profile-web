@@ -3,9 +3,4 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = {
-  nextConfig,
-  env: {
-    appName: 'My Portfolio Sites',
-  },
-}
+module.exports = nextConfig
