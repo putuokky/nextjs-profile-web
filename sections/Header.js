@@ -15,6 +15,7 @@ function Navbar({ router }) {
   const navs = [
     { text: 'Home', href: '/' },
     { text: 'Portfolio', href: '/portfolio' },
+    { text: 'About Me', href: '/about' },
   ];
 
   const renderThemeChanger = () => {
