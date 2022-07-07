@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <Layout title="Home">
+    <Layout title="Home &mdash; My Portfolio Sites">
       <section className="pt-2 my-16">
         <div className="container">
           <div className="flex flex-wrap items-center">

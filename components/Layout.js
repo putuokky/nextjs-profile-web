@@ -6,7 +6,7 @@ export default function Layout(props) {
   return (
     <>
       <Head>
-        <title>{props.title} &mdash; My Portfolio Sites</title>
+        <title>{props.title}</title>
       </Head>
 
       <div className="min-h-screen flex flex-col">
