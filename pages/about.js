@@ -9,10 +9,6 @@ export default function about() {
             <div className="w-full">
               <h1 className="text-4xl font-semibold mb-5">About Me</h1>
               <p className="text-2xl mb-8 leading-9">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eveniet unde odio ducimus incidunt ipsum laudantium necessitatibus quibusdam sunt beatae?</p>
-
-              <div className='flex flex-wrap -mx-2'>
-                asd
-              </div>
             </div>
           </div>
         </div>
