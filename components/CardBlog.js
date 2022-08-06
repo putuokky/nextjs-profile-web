@@ -1,23 +1,31 @@
 import Image from 'next/image'
-import PORTO1 from '../public/img/portfolio/coffe.jpg'
-import PORTO2 from '../public/img/portfolio/programming.jpg'
+import BLOG1 from '../public/img/blog/coffe.jpg'
+import BLOG2 from '../public/img/blog/programming.jpg'
+import BLOG3 from '../public/img/blog/mechanical-keyboard.jpg'
 
-export default function CardPorto() {
+export default function CardBlog() {
 
   const data = [
     {
       id: 1,
       alt: 'Coffe',
-      img: PORTO1,
-      title: 'Lorem ipsum dolor sit amet consectetur Porto 1.',
-      subtitle: 'Lorem ipsum dolor sit porto 1.'
+      img: BLOG1,
+      title: 'Lorem ipsum dolor sit amet consectetur blog 1.',
+      subtitle: 'Lorem ipsum dolor sit blog 1.'
     },
     {
       id: 2,
       alt: 'Programming',
-      img: PORTO2,
-      title: 'Lorem ipsum dolor sit amet consectetur Porto 2.',
-      subtitle: 'Lorem ipsum dolor sit porto 2.'
+      img: BLOG2,
+      title: 'Lorem ipsum dolor sit amet consectetur BLOG 2.',
+      subtitle: 'Lorem ipsum dolor sit blog 2.'
+    },
+    {
+      id: 3,
+      alt: 'Keyboard',
+      img: BLOG3,
+      title: 'Lorem ipsum dolor sit amet consectetur BLOG 3.',
+      subtitle: 'Lorem ipsum dolor sit blog 3.'
     }
   ];
 

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { withRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
+import { HiMenu } from "react-icons/hi";
+import { MdOutlineClose } from "react-icons/md";
 
 function Navbar({ router }) {
   const { systemTheme, theme, setTheme } = useTheme();
@@ -17,6 +19,7 @@ function Navbar({ router }) {
   const navs = [
     { text: 'Home', href: '/' },
     { text: 'Portfolio', href: '/portfolio' },
+    { text: 'Blog', href: '/blog' },
     { text: 'About Me', href: '/about' },
   ];
 
@@ -49,16 +52,20 @@ function Navbar({ router }) {
             <Link href="/"><a className="text-3xl uppercase font-semibold"><Hero />.</a></Link>
           </div>
           <div className='flex items-center'>
-            {/* <Button className="md:hidden">
-              <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" /></svg>
+            <Button className="md:hidden">
+              <HiMenu className="text-2xl" />
             </Button>
             <Button className="md:hidden">
-              <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
-            </Button> */}
-            <nav>
-              <ul className="ml-auto flex">
+              <MdOutlineClose className="text-3xl" />
+            </Button>
+            <nav className="hidden md:block">
+              <ul className="mx-auto flex">
                 {navs.map(nav => (
-                  <li key={nav.text}><Link href={nav.href}><a className={`inline-block mx-5 mt-2 relative transition-opacity ${router.pathname == nav.href ? 'font-bold' : ''}`}>{nav.text}</a></Link></li>
+                  <li key={nav.text}>
+                    <Link href={nav.href}>
+                      <a className={`inline-block mx-5 mt-2 relative transition-opacity hover:font-bold ${router.pathname == nav.href ? 'font-bold' : ''}`}>{nav.text}</a>
+                    </Link>
+                  </li>
                 ))}
                 <li className='inline-block mx-5 mt-2 relative transition-opacity'>
                   {renderThemeChanger()}

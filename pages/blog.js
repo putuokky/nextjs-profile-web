@@ -1,18 +1,17 @@
-import CardPorto from '@/components/CardPorto'
+import CardBlog from '@/components/CardBlog'
 import Layout from '@/components/Layout'
 
-export default function portfolio() {
+export default function blog() {
   return (
-    <Layout title="Portfolio &mdash; My Portfolio Sites">
+    <Layout title="Blog &mdash; My Portfolio Sites">
       <section className="pt-2 my-24">
         <div className="container">
           <div className="flex flex-wrap items-center">
             <div className="w-full">
-              <h1 className="text-4xl font-semibold mb-5">Portfolio</h1>
+              <h1 className="text-4xl font-semibold mb-5">Blog</h1>
               <p className="text-2xl mb-8 leading-9">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione eveniet unde odio ducimus incidunt ipsum laudantium necessitatibus quibusdam sunt beatae?</p>
 
-              <CardPorto />
-              <CardPorto />
+              <CardBlog />
             </div>
           </div>
         </div>
