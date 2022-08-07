@@ -47,32 +47,28 @@ function Navbar({ router }) {
   return (
     <header className='mt-8'>
       <div className='container'>
-        <div className='flex items-center justify-between relative'>
+        <div className='flex items-center justify-between'>
           <div>
             <Link href="/"><a className="text-3xl uppercase font-semibold"><Hero />.</a></Link>
           </div>
-          <div className='flex items-center'>
-            <Button className="md:hidden">
-              <HiMenu className="text-2xl" />
-            </Button>
-            <Button className="md:hidden">
-              <MdOutlineClose className="text-3xl" />
-            </Button>
-            <nav className="hidden md:block">
-              <ul className="mx-auto flex">
-                {navs.map(nav => (
-                  <li key={nav.text}>
-                    <Link href={nav.href}>
-                      <a className={`inline-block mx-5 mt-2 relative transition-opacity hover:font-bold ${router.pathname == nav.href ? 'font-bold' : ''}`}>{nav.text}</a>
-                    </Link>
-                  </li>
-                ))}
-                <li className='inline-block mx-5 mt-2 relative transition-opacity'>
-                  {renderThemeChanger()}
+          <Button className="md:hidden">
+            {/* <HiMenu className="text-2xl" /> */}
+            <MdOutlineClose className="text   -2xl" />
+          </Button>
+          <nav className="w-screen bg-neutral-800 absolute right-0 top-16 md:w-fit md:top-0 md:relative md:mr-0 md:bg-inherit">
+            <ul className="px-5 my-3 mx-3 md:flex">
+              {navs.map(nav => (
+                <li key={nav.text} className="my-5 md:my-0 md:mx-5">
+                  <Link href={nav.href}>
+                    <a className={`hover:font-bold ${router.pathname == nav.href ? 'font-bold' : ''}`}>{nav.text}</a>
+                  </Link>
                 </li>
-              </ul>
-            </nav>
-          </div>
+              ))}
+              <li className="md:mt-1">
+                {renderThemeChanger()}
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
